@@ -1,6 +1,6 @@
 {% set name = "PyICU" %}
-{% set version = "2.0.3" %}
-{% set sha256 = "c452d14409d93819a398a93d27d5d58d6236af690d537eb2d76c8305e8d0fa5f" %}
+{% set version = "2.0.4" %}
+{% set sha256 = "e074bfbe74919a21bc2ed8e4f98006711888b11efa0e3414ad084c75c340e1bd" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   skip: True  # [win]
 
