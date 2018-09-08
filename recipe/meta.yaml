@@ -1,6 +1,6 @@
 {% set name = "PyICU" %}
-{% set version = "2.0.5" %}
-{% set sha256 = "9122ff2f813bced986e03679f4c6d24f4d09feb3dc85d2a47f92410797275222" %}
+{% set version = "2.1" %}
+{% set sha256 = "5fdab441c91adf9ceb6373dfdca18fbde3676f906babda45d85cf0fa8e43fd8a" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
