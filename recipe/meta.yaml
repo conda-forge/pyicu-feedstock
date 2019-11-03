@@ -1,18 +1,16 @@
-{% set name = "PyICU" %}
-{% set version = "2.0.5" %}
-{% set sha256 = "9122ff2f813bced986e03679f4c6d24f4d09feb3dc85d2a47f92410797275222" %}
+{% set version = "2.3.1" %}
+
 package:
-  name: {{ name|lower }}
+  name: pyicu
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/P/PyICU/PyICU-{{ version }}.tar.gz
+  sha256: ddb2b453853b4c25db382bc5e8c4cde09b3f4696ef1e1494f8294e174f459cf4
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [win]
 
 requirements:
