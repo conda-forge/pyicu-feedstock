@@ -1,4 +1,4 @@
-{% set version = "2.4.2" %}
+{% set version = "2.5" %}
 
 package:
   name: pyicu
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/PyICU/PyICU-{{ version }}.tar.gz
-  sha256: 48c43424b67090c4028d8743132d141d8477f390f93e26c2cb67c26485622c20
+  sha256: a120b68c53f769f37bfb70b7e84ca12c3f4ab1e4df43e87a02dff05ae472cdbc
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -36,7 +36,7 @@ about:
   license: OTHER
   license_family: OTHER
   license_file: LICENSE
-  summary: 'Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.'
+  summary: Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
 
   description: |
     Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
