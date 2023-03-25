@@ -17,6 +17,9 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    # Also pin icu here so that the version is consistent with host.
+    # otherwise, finding the correct icu seems to fail on OSX-64
+    - icu
   host:
     - python
     - pip
@@ -25,7 +28,6 @@ requirements:
   run:
     - python
     - cld2-cffi
-    - icu
 
 test:
   commands:
