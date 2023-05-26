@@ -9,7 +9,7 @@ source:
   sha256: 3d80de47045a8163db5aebc947c42b4d429eeea4f0c32af4f40b33981fa872b9
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
@@ -17,6 +17,9 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    # Also pin icu here so that the version is consistent with host.
+    # otherwise, finding the correct icu seems to fail on OSX-64
+    - icu
   host:
     - python
     - pip
@@ -25,7 +28,6 @@ requirements:
   run:
     - python
     - cld2-cffi
-    - icu
 
 test:
   commands:
