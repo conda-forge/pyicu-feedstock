@@ -1,4 +1,4 @@
-{% set version = "2.8" %}
+{% set version = "2.11" %}
 
 package:
   name: pyicu
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/PyICU/PyICU-{{ version }}.tar.gz
-  sha256: 3d80de47045a8163db5aebc947c42b4d429eeea4f0c32af4f40b33981fa872b9
+  sha256: 3ab531264cfe9132b3d2ac5d708da9a4649d25f6e6813730ac88cf040a08a844
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
