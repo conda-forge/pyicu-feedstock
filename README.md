@@ -9,9 +9,9 @@ Package license: OTHER
 
 Summary: Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
 
-Development: https://github.com/ovalhub/pyicu
+Development: https://gitlab.pyicu.org/main/pyicu
 
-Documentation: https://github.com/ovalhub/pyicu
+Documentation: https://gitlab.pyicu.org/main/pyicu
 
 Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
 ICU stands for "International Components for Unicode". These are the i18n
