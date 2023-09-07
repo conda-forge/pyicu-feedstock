@@ -208,4 +208,5 @@ Feedstock Maintainers
 =====================
 
 * [@cu8blank](https://github.com/cu8blank/)
+* [@rxm7706](https://github.com/rxm7706/)
 
