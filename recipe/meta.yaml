@@ -1,4 +1,4 @@
-{% set version = "2.12" %}
+{% set version = "2.13" %}
 
 package:
   name: pyicu
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/P/PyICU/PyICU-{{ version }}.tar.gz
-  sha256: bd7ab5efa93ad692e6daa29cd249364e521218329221726a113ca3cb281c8611
+  sha256: d481be888975df3097c2790241bbe8518f65c9676a74957cdbe790e559c828f6
 
 build:
   number: 0
@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     # Also pin icu here so that the version is consistent with host.
     # otherwise, finding the correct icu seems to fail on OSX-64
