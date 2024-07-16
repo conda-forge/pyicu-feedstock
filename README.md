@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyicu-feedstock
 
 Home: https://github.com/ovalhub/pyicu
 
-Package license: OTHER
+Package license: MIT
 
 Summary: Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
 
