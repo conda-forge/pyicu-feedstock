@@ -26,15 +26,16 @@ requirements:
   host:
     - python
     - pip
-    - cld2-cffi
     - icu
   run:
     - python
-    - cld2-cffi
 
 test:
+  requires:
+    - pip
   commands:
     - python -c "from icu import Locale;locale = Locale('pt_BR')"
+    - pip check
 
 about:
   home: https://github.com/ovalhub/pyicu
