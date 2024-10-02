@@ -9,7 +9,7 @@ source:
   sha256: d4919085eaa07da12bade8ee721e7bbf7ade0151ca0f82946a26c8f4b98cdceb
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win]
 
@@ -26,6 +26,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - cld2-cffi
     - icu
   run:
     - python
