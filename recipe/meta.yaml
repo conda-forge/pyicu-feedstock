@@ -27,7 +27,6 @@ requirements:
     - python
     - pip
     - setuptools
-    - cld2-cffi
     - icu
   run:
     - python
