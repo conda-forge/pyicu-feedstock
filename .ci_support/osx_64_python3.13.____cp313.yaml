@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+- '10.13'
 MACOSX_SDK_VERSION:
-- '11.0'
+- '10.13'
 c_compiler:
 - clang
 c_compiler_version:
@@ -9,7 +9,7 @@ c_compiler_version:
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
-- '11.0'
+- '10.13'
 channel_sources:
 - conda-forge/label/python_rc,conda-forge
 channel_targets:
@@ -21,19 +21,15 @@ cxx_compiler_version:
 icu:
 - '75'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-<<<<<<<< HEAD:.ci_support/osx_arm64_python3.10.____cpython.yaml
-- 3.10.* *_cpython
-========
 - 3.13.* *_cp313
->>>>>>>> upstream/main:.ci_support/osx_64_python3.13.____cp313.yaml
 target_platform:
-- osx-arm64
+- osx-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version

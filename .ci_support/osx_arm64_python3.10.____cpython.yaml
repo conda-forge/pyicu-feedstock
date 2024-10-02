@@ -11,7 +11,7 @@ c_stdlib:
 c_stdlib_version:
 - '11.0'
 channel_sources:
-- conda-forge/label/python_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -27,11 +27,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-<<<<<<<< HEAD:.ci_support/osx_arm64_python3.10.____cpython.yaml
 - 3.10.* *_cpython
-========
-- 3.13.* *_cp313
->>>>>>>> upstream/main:.ci_support/osx_64_python3.13.____cp313.yaml
 target_platform:
 - osx-arm64
 zip_keys:

@@ -25,13 +25,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-<<<<<<<< HEAD:.ci_support/linux_ppc64le_python3.9.____73_pypy.yaml
-- 3.9.* *_73_pypy
-========
 - 3.13.* *_cp313
->>>>>>>> upstream/main:.ci_support/linux_64_python3.13.____cp313.yaml
 target_platform:
-- linux-ppc64le
+- linux-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
